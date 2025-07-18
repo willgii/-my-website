@@ -1,571 +1,364 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>武汉特种兵旅游攻略 | 2025.07.26-27</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#1E40AF', // 长江蓝
-            secondary: '#F97316', // 烟火橙
-            neutral: '#F8FAFC', // 背景灰
-            dark: '#1E293B' // 文字黑
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          },
-        },
-      }
-    }
-  </script>
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .text-shadow {
-        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      }
-      .card-hover {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .card-hover:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
-      }
-    }
-  </style>
-</head>
-<body class="bg-neutral text-dark">
-  <!-- 导航栏 -->
-  <nav class="sticky top-0 z-50 bg-white shadow-md">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="flex items-center space-x-2">
-        <i class="fa fa-map-marker text-secondary text-2xl"></i>
-        <h1 class="text-xl font-bold text-primary">武汉特种兵攻略</h1>
-      </div>
-      <div class="hidden md:flex space-x-6">
-        <a href="#overview" class="hover:text-secondary transition">行程概览</a>
-        <a href="#day1" class="hover:text-secondary transition">第一天</a>
-        <a href="#day2" class="hover:text-secondary transition">第二天</a>
-        <a href="#food" class="hover:text-secondary transition">美食推荐</a>
-        <a href="#tips" class="hover:text-secondary transition">实用贴士</a>
-      </div>
-      <button class="md:hidden text-primary text-xl">
-        <i class="fa fa-bars"></i>
-      </button>
-    </div>
-  </nav>
-
-  <!-- 封面区域 -->
-  <header class="relative h-[50vh] min-h-[400px] overflow-hidden">
-    <img src="https://picsum.photos/id/1037/1600/900" alt="武汉长江风景" class="absolute w-full h-full object-cover">
-    <div class="absolute inset-0 bg-primary/50 flex items-center">
-      <div class="container mx-auto px-6 text-white">
-        <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-shadow mb-4">武汉2日特种兵之旅</h1>
-        <p class="text-[clamp(1rem,2vw,1.25rem)] max-w-2xl">体验过早烟火气 · 打卡长江江景 · 探寻人文古迹</p>
-        <div class="mt-6 flex items-center space-x-4">
-          <div class="flex items-center">
-            <i class="fa fa-calendar text-secondary mr-2"></i>
-            <span>2025.07.26-27</span>
-          </div>
-          <div class="flex items-center">
-            <i class="fa fa-map text-secondary mr-2"></i>
-            <span>武昌·汉口·汉阳</span>
-          </div>
-          <div class="flex items-center">
-            <i class="fa fa-clock-o text-secondary mr-2"></i>
-            <span>紧凑行程·高效游玩</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- 行程概览 -->
-  <section id="overview" class="py-12 container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-10 text-primary">行程概览</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white rounded-lg shadow p-6 card-hover">
-        <div class="flex items-center mb-4">
-          <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
-            <i class="fa fa-sun-o text-primary"></i>
-          </div>
-          <h3 class="text-xl font-semibold">7月26日 · 第一天</h3>
-        </div>
-        <ul class="space-y-3">
-          <li class="flex items-start">
-            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-            <span>武昌站抵达 → 粮道街过早 → 湖北省博物馆</span>
-          </li>
-          <li class="flex items-start">
-            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-            <span>东湖听涛景区 → 黄鹤楼 → 户部巷午餐</span>
-          </li>
-          <li class="flex items-start">
-            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-            <span>长江轮渡 → 汉口江滩 → 江汉路步行街</span>
-          </li>
-          <li class="flex items-start">
-            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-            <span>酒店入住 → 吉庆街夜市</span>
-          </li>
-        </ul>
-      </div>
-      <div class="bg-white rounded-lg shadow p-6 card-hover">
-        <div class="flex items-center mb-4">
-          <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
-            <i class="fa fa-moon-o text-primary"></i>
-          </div>
-          <h3 class="text-xl font-semibold">7月27日 · 第二天</h3>
-        </div>
-        <ul class="space-y-3">
-          <li class="flex items-start">
-            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-            <span>老通城豆皮过早 → 昙华林文艺街区</span>
-          </li>
-          <li class="flex items-start">
-            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-            <span>司门口黄鹤楼机位 → 晴川阁江景</span>
-          </li>
-          <li class="flex items-start">
-            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-            <span>汉阳造午餐 → 古琴台知音文化</span>
-          </li>
-          <li class="flex items-start">
-            <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-            <span>返程准备 → 武昌站乘车</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 第一天行程 -->
-  <section id="day1" class="py-12 bg-gradient-to-b from-white to-neutral">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 text-primary">第一天 · 武昌经典人文+江景体验</h2>
-      
-      <div class="space-y-10">
-        <!-- 抵达与寄存 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <div class="md:flex">
-            <div class="md:w-1/3">
-              <img src="https://picsum.photos/id/1067/800/600" alt="武昌站" class="h-full w-full object-cover">
-            </div>
-            <div class="md:w-2/3 p-6">
-              <div class="flex items-center mb-4">
-                <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center mr-3">
-                  <i class="fa fa-train"></i>
-                </div>
-                <h3 class="text-xl font-semibold">06:18 抵达武昌站 & 行李寄存</h3>
-              </div>
-              <div class="grid md:grid-cols-3 gap-4 mb-4">
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">地点</p>
-                  <p>武昌站地铁站D口寄存点</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">费用</p>
-                  <p>行李箱10元/天</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">时间</p>
-                  <p>7:30-24:00营业</p>
-                </div>
-              </div>
-              <p class="text-gray-700">抵达后稍作休整，7:30前往寄存点存放行李，轻装出发开启行程。寄存点位于地铁站D口50米处，方便快捷。</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 粮道街过早 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <div class="md:flex">
-            <div class="md:w-1/3">
-              <img src="https://picsum.photos/id/292/800/600" alt="武汉过早" class="h-full w-full object-cover">
-            </div>
-            <div class="md:w-2/3 p-6">
-              <div class="flex items-center mb-4">
-                <div class="w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center mr-3">
-                  <i class="fa fa-cutlery"></i>
-                </div>
-                <h3 class="text-xl font-semibold">07:30 粮道街过早</h3>
-              </div>
-              <div class="grid md:grid-cols-3 gap-4 mb-4">
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">路线</p>
-                  <p>武昌站打车10分钟（约10元）</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">费用</p>
-                  <p>人均15-20元</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">时长</p>
-                  <p>约1小时</p>
-                </div>
-              </div>
-              <p class="text-gray-700 mb-3">必吃推荐：</p>
-              <ul class="list-disc list-inside text-gray-700 space-y-1">
-                <li>赵师傅油饼包烧麦（排队约20分钟，武汉过早顶流）</li>
-                <li>三镇民生甜食馆热干面（经典原味）</li>
-                <li>熊太婆原汤水饺（鲜肉馅配红油）</li>
-              </ul>
-              <p class="text-gray-700 mt-3">贴士：建议先买油饼包烧麦，再分散排队其他小吃，节省时间。</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 湖北省博物馆 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <div class="md:flex">
-            <div class="md:w-1/3">
-              <img src="https://picsum.photos/id/200/800/600" alt="湖北省博物馆" class="h-full w-full object-cover">
-            </div>
-            <div class="md:w-2/3 p-6">
-              <div class="flex items-center mb-4">
-                <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center mr-3">
-                  <i class="fa fa-university"></i>
-                </div>
-                <h3 class="text-xl font-semibold">09:00 湖北省博物馆</h3>
-              </div>
-              <div class="grid md:grid-cols-3 gap-4 mb-4">
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">路线</p>
-                  <p>粮道街打车15分钟（约15元）</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">费用</p>
-                  <p>免费（需预约）+ 编钟表演30元</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">时长</p>
-                  <p>约1.5小时</p>
-                </div>
-              </div>
-              <p class="text-gray-700 mb-3">重点参观：</p>
-              <ul class="list-disc list-inside text-gray-700 space-y-1">
-                <li>越王勾践剑（楚国青铜瑰宝）</li>
-                <li>曾侯乙编钟（11:30场次表演，需单独预约）</li>
-                <li>元青花四爱图梅瓶（镇馆之宝）</li>
-              </ul>
-              <p class="text-gray-700 mt-3">预约：提前5天在"湖北省博物馆"公众号预约，每日17:18放票，编钟表演票需单独预约。</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 后续行程省略，结构相同 -->
-        <!-- 东湖听涛景区 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <div class="md:flex">
-            <div class="md:w-1/3">
-              <img src="https://picsum.photos/id/131/800/600" alt="东湖听涛景区" class="h-full w-full object-cover">
-            </div>
-            <div class="md:w-2/3 p-6">
-              <div class="flex items-center mb-4">
-                <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center mr-3">
-                  <i class="fa fa-tree"></i>
-                </div>
-                <h3 class="text-xl font-semibold">10:30 东湖听涛景区</h3>
-              </div>
-              <div class="grid md:grid-cols-3 gap-4 mb-4">
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">路线</p>
-                  <p>省博步行15分钟/打车5分钟</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">费用</p>
-                  <p>免费</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">时长</p>
-                  <p>约1小时</p>
-                </div>
-              </div>
-              <p class="text-gray-700 mb-3">亮点：</p>
-              <ul class="list-disc list-inside text-gray-700 space-y-1">
-                <li>行吟阁（纪念屈原而建）</li>
-                <li>碧潭观鱼（赏锦鲤群游）</li>
-                <li>沿湖漫步，感受东湖生态风光</li>
-              </ul>
-              <p class="text-gray-700 mt-3">贴士：若时间紧张，可在景区门口拍照后快速离开，直奔黄鹤楼。</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 黄鹤楼 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <div class="md:flex">
-            <div class="md:w-1/3">
-              <img src="https://picsum.photos/id/1031/800/600" alt="黄鹤楼" class="h-full w-full object-cover">
-            </div>
-            <div class="md:w-2/3 p-6">
-              <div class="flex items-center mb-4">
-                <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center mr-3">
-                  <i class="fa fa-building"></i>
-                </div>
-                <h3 class="text-xl font-semibold">11:00 黄鹤楼</h3>
-              </div>
-              <div class="grid md:grid-cols-3 gap-4 mb-4">
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">路线</p>
-                  <p>听涛景区打车20分钟（约20元）</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">费用</p>
-                  <p>70元（学生半价）</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">时长</p>
-                  <p>约1小时</p>
-                </div>
-              </div>
-              <p class="text-gray-700 mb-3">必体验：</p>
-              <ul class="list-disc list-inside text-gray-700 space-y-1">
-                <li>登楼俯瞰长江与武汉长江大桥</li>
-                <li>打卡"楚天极目"石刻</li>
-                <li>主楼拍照，感受"天下绝景"气势</li>
-              </ul>
-              <p class="text-gray-700 mt-3">行李寄存：黄鹤楼东门寄存点（8:30-19:30营业，步行约10分钟，10元/天）。</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 剩余行程项采用相同结构 -->
-      </div>
-    </div>
-  </section>
-
-  <!-- 第二天行程 -->
-  <section id="day2" class="py-12 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 text-primary">第二天 · 汉口文艺+汉阳古迹</h2>
-      
-      <!-- 第二天行程内容结构与第一天相同 -->
-      <div class="space-y-10">
-        <!-- 老通城豆皮过早 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <div class="md:flex">
-            <div class="md:w-1/3">
-              <img src="https://picsum.photos/id/225/800/600" alt="老通城豆皮" class="h-full w-full object-cover">
-            </div>
-            <div class="md:w-2/3 p-6">
-              <div class="flex items-center mb-4">
-                <div class="w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center mr-3">
-                  <i class="fa fa-cutlery"></i>
-                </div>
-                <h3 class="text-xl font-semibold">07:00 老通城豆皮过早</h3>
-              </div>
-              <div class="grid md:grid-cols-3 gap-4 mb-4">
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">路线</p>
-                  <p>酒店步行5分钟</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">费用</p>
-                  <p>人均10元</p>
-                </div>
-                <div class="bg-neutral p-3 rounded">
-                  <p class="text-sm text-gray-500">时长</p>
-                  <p>约40分钟</p>
-                </div>
-              </div>
-              <p class="text-gray-700 mb-3">必点推荐：</p>
-              <ul class="list-disc list-inside text-gray-700 space-y-1">
-                <li>金牌三鲜豆皮（糯米+笋丁+肉丁）</li>
-                <li>桂花糊米酒（解腻甜品）</li>
-                <li>热干面（经典武汉早餐搭配）</li>
-              </ul>
-              <p class="text-gray-700 mt-3">老通城是武汉老字号，创始于1929年，豆皮制作工艺精湛，一定要趁热吃。</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 后续行程项省略 -->
-      </div>
-    </div>
-  </section>
-
-  <!-- 美食推荐 -->
-  <section id="food" class="py-12 bg-neutral">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 text-primary">武汉必吃美食清单</h2>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- 美食卡片1 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden card-hover">
-          <img src="https://picsum.photos/id/292/600/400" alt="热干面" class="w-full h-48 object-cover">
-          <div class="p-5">
-            <h3 class="text-xl font-semibold mb-2">热干面</h3>
-            <p class="text-gray-600 text-sm mb-3">武汉过早灵魂，碱水面拌芝麻酱，香气扑鼻，搭配辣萝卜丁和葱花更美味。</p>
-            <div class="flex items-center text-sm text-gray-500">
-              <i class="fa fa-map-marker text-secondary mr-1"></i>
-              <span>推荐：三镇民生甜食馆、蔡林记</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 美食卡片2 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden card-hover">
-          <img src="https://picsum.photos/id/431/600/400" alt="油饼包烧麦" class="w-full h-48 object-cover">
-          <div class="p-5">
-            <h3 class="text-xl font-semibold mb-2">油饼包烧麦</h3>
-            <p class="text-gray-600 text-sm mb-3">外酥内软的油饼包裹糯米烧麦，咸香带点胡椒味，武汉过早顶流CP。</p>
-            <div class="flex items-center text-sm text-gray-500">
-              <i class="fa fa-map-marker text-secondary mr-1"></i>
-              <span>推荐：赵师傅油饼包烧麦</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 美食卡片3 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden card-hover">
-          <img src="https://picsum.photos/id/225/600/400" alt="三鲜豆皮" class="w-full h-48 object-cover">
-          <div class="p-5">
-            <h3 class="text-xl font-semibold mb-2">三鲜豆皮</h3>
-            <p class="text-gray-600 text-sm mb-3">糯米打底，铺上蛋液、笋丁、肉丁，煎至金黄酥脆，老字号必点。</p>
-            <div class="flex items-center text-sm text-gray-500">
-              <i class="fa fa-map-marker text-secondary mr-1"></i>
-              <span>推荐：老通城、严老幺重油烧麦</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 更多美食卡片省略 -->
-      </div>
-    </div>
-  </section>
-
-  <!-- 实用贴士 -->
-  <section id="tips" class="py-12 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 text-primary">实用贴士 & 注意事项</h2>
-      
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-neutral rounded-lg p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
-              <i class="fa fa-ticket text-primary"></i>
-            </div>
-            <h3 class="text-xl font-semibold">门票预约</h3>
-          </div>
-          <ul class="space-y-3 text-gray-700">
-            <li class="flex items-start">
-              <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-              <span>湖北省博物馆：提前5天公众号预约，17:18放票</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-              <span>编钟表演：单独预约，30元/人，场次有限</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-              <span>晴川阁：提前在"武汉晴川阁大禹文化博物馆"预约</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="bg-neutral rounded-lg p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
-              <i class="fa fa-subway text-primary"></i>
-            </div>
-            <h3 class="text-xl font-semibold">交通指南</h3>
-          </div>
-          <ul class="space-y-3 text-gray-700">
-            <li class="flex items-start">
-              <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-              <span>打车：日均费用约80元，使用高德/滴滴实时叫车</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-              <span>轮渡：中华路→武汉关1.5元，刷交通卡或扫码</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-              <span>地铁：下载"Metro新时代"APP扫码乘车</span>
-            </li>
-          </ul>
-        </div>
-        
-        <!-- 更多贴士卡片省略 -->
-      </div>
-    </div>
-  </section>
-
-  <!-- 页脚 -->
-  <footer class="bg-primary text-white py-8">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-4 md:mb-0">
-          <div class="flex items-center justify-center md:justify-start">
-            <i class="fa fa-map-marker text-secondary text-2xl mr-2"></i>
-            <h2 class="text-xl font-bold">武汉特种兵攻略</h2>
-          </div>
-          <p class="text-center md:text-left mt-2 text-white/80">祝您旅途愉快，感受武汉烟火气</p>
-        </div>
-        <div class="flex space-x-4">
-          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition">
-            <i class="fa fa-weixin"></i>
-          </a>
-          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition">
-            <i class="fa fa-weibo"></i>
-          </a>
-          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition">
-            <i class="fa fa-instagram"></i>
-          </a>
-        </div>
-      </div>
-      <div class="border-t border-white/20 mt-6 pt-6 text-center text-white/60 text-sm">
-        <p>© 2025 武汉旅游攻略 | 行程规划仅供参考，请根据实际情况调整</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- 返回顶部按钮 -->
-  <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-primary text-white shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
-    <i class="fa fa-arrow-up"></i>
-  </button>
-
-  <script>
-    // 返回顶部按钮功能
-    const backToTopBtn = document.getElementById('backToTop');
-    
-    window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 300) {
-        backToTopBtn.classList.remove('opacity-0', 'invisible');
-        backToTopBtn.classList.add('opacity-100', 'visible');
-      } else {
-        backToTopBtn.classList.remove('opacity-100', 'visible');
-        backToTopBtn.classList.add('opacity-0', 'invisible');
-      }
-    });
-    
-    backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-
-    // 平滑滚动导航
-    document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: 'smooth'
-          });
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>投篮比赛</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        accent: '#F59E0B',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
         }
-      });
-    });
-  </script>
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .backdrop-blur-xs {
+                backdrop-filter: blur(2px);
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .animate-bounce-custom {
+                animation: bounce-custom 2s infinite;
+            }
+            @keyframes bounce-custom {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+            .animate-fade-in {
+                animation: fade-in 0.5s ease-in-out;
+            }
+            @keyframes fade-in {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            .animate-scale {
+                animation: scale 0.3s ease-in-out;
+            }
+            @keyframes scale {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.1); }
+                100% { transform: scale(1); }
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-blue-100 min-h-screen font-sans text-dark overflow-hidden">
+    <!-- 游戏容器 -->
+    <div id="game-container" class="relative w-full h-screen overflow-hidden">
+        <!-- 天空背景 -->
+        <div class="absolute inset-0 bg-gradient-to-b from-blue-400 to-blue-200"></div>
+        
+        <!-- 云朵装饰 -->
+        <div class="absolute top-10 left-[10%] w-24 h-8 bg-white rounded-full opacity-70 shadow-lg"></div>
+        <div class="absolute top-20 right-[15%] w-32 h-10 bg-white rounded-full opacity-80 shadow-lg"></div>
+        <div class="absolute top-40 left-[25%] w-28 h-9 bg-white rounded-full opacity-75 shadow-lg"></div>
+        
+        <!-- 地面 -->
+        <div class="absolute bottom-0 left-0 right-0 h-1/4 bg-green-500">
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-green-700 to-green-500"></div>
+        </div>
+        
+        <!-- 游戏界面 -->
+        <div id="game-screen" class="absolute inset-0 flex flex-col items-center justify-between p-4">
+            <!-- 计分板 -->
+            <div class="w-full flex justify-between items-center z-10 bg-white/80 backdrop-blur-xs rounded-xl p-3 shadow-lg">
+                <div class="flex items-center space-x-2">
+                    <i class="fa fa-clock-o text-primary text-xl"></i>
+                    <span id="timer" class="text-xl font-bold">30</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fa fa-basketball-ball text-accent text-xl"></i>
+                    <span id="score" class="text-xl font-bold">0</span>
+                </div>
+            </div>
+            
+            <!-- 篮球架 -->
+            <div id="basketball-hoop" class="absolute top-1/4 left-1/2 transform -translate-x-1/2 z-10">
+                <!-- 篮板 -->
+                <div class="w-32 h-28 bg-white rounded-md shadow-lg border-4 border-gray-700 flex justify-center items-center">
+                    <div class="w-20 h-20 rounded-full border-4 border-red-600"></div>
+                </div>
+                <!-- 篮筐 -->
+                <div class="w-24 h-2 bg-red-600 rounded-full shadow-lg transform -translate-y-1"></div>
+                <!-- 篮网 -->
+                <div class="w-24 h-16 overflow-hidden">
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1" stroke-dasharray="2,2" />
+                        <path d="M25,0 L25,100" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1" stroke-dasharray="2,2" />
+                        <path d="M50,0 L50,100" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1" stroke-dasharray="2,2" />
+                        <path d="M75,0 L75,100" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1" stroke-dasharray="2,2" />
+                        <path d="M0,25 L100,25" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1" stroke-dasharray="2,2" />
+                        <path d="M0,50 L100,50" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1" stroke-dasharray="2,2" />
+                        <path d="M0,75 L100,75" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1" stroke-dasharray="2,2" />
+                    </svg>
+                </div>
+                <!-- 支柱 -->
+                <div class="w-6 h-40 bg-gray-700 mx-auto transform translate-y-2"></div>
+            </div>
+            
+            <!-- 篮球 -->
+            <div id="basketball" class="absolute bottom-24 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-orange-500 rounded-full shadow-lg cursor-pointer z-20 animate-bounce-custom">
+                <div class="absolute inset-0 rounded-full border-2 border-orange-700"></div>
+                <div class="absolute w-full h-0.5 bg-orange-700 top-1/2 transform -translate-y-1/2"></div>
+                <div class="absolute h-full w-0.5 bg-orange-700 left-1/2 transform -translate-x-1/2"></div>
+            </div>
+            
+            <!-- 游戏控制区 -->
+            <div class="w-full flex justify-center items-center space-x-6 mb-8 z-10">
+                <button id="start-btn" class="px-6 py-3 bg-primary text-white rounded-full shadow-lg hover:bg-primary/90 active:scale-95 transition-all duration-300 text-lg font-bold flex items-center">
+                    <i class="fa fa-play mr-2"></i> 开始游戏
+                </button>
+                <button id="restart-btn" class="px-6 py-3 bg-secondary text-white rounded-full shadow-lg hover:bg-secondary/90 active:scale-95 transition-all duration-300 text-lg font-bold flex items-center hidden">
+                    <i class="fa fa-refresh mr-2"></i> 重新开始
+                </button>
+            </div>
+        </div>
+        
+        <!-- 游戏结果弹窗 -->
+        <div id="result-modal" class="absolute inset-0 flex items-center justify-center bg-dark/50 backdrop-blur-xs z-50 hidden">
+            <div class="bg-white rounded-2xl p-8 shadow-2xl max-w-md w-full mx-4 animate-fade-in">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">游戏结束!</div>
+                    <div class="text-xl mb-6">你的得分是: <span id="final-score" class="font-bold text-accent">0</span></div>
+                    <button id="play-again-btn" class="px-8 py-4 bg-primary text-white rounded-full shadow-lg hover:bg-primary/90 active:scale-95 transition-all duration-300 text-lg font-bold">
+                        再玩一次
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 获取DOM元素
+        const basketball = document.getElementById('basketball');
+        const basketballHoop = document.getElementById('basketball-hoop');
+        const startBtn = document.getElementById('start-btn');
+        const restartBtn = document.getElementById('restart-btn');
+        const resultModal = document.getElementById('result-modal');
+        const finalScore = document.getElementById('final-score');
+        const playAgainBtn = document.getElementById('play-again-btn');
+        const scoreDisplay = document.getElementById('score');
+        const timerDisplay = document.getElementById('timer');
+        
+        // 游戏状态
+        let isPlaying = false;
+        let score = 0;
+        let timeLeft = 30;
+        let timer;
+        let isAnimating = false;
+        
+        // 游戏配置
+        const config = {
+            gravity: 0.5,
+            throwForce: 15,
+            basketPosition: { x: 0, y: 0 },
+            ballPosition: { x: 0, y: 0 }
+        };
+        
+        // 更新篮筐和篮球的位置
+        function updatePositions() {
+            const hoopRect = basketballHoop.getBoundingClientRect();
+            const ballRect = basketball.getBoundingClientRect();
+            
+            config.basketPosition.x = hoopRect.left + hoopRect.width / 2;
+            config.basketPosition.y = hoopRect.top + hoopRect.height;
+            config.ballPosition.x = ballRect.left + ballRect.width / 2;
+            config.ballPosition.y = ballRect.top + ballRect.height / 2;
+        }
+        
+        // 投掷篮球
+        function throwBall() {
+            if (isAnimating || !isPlaying) return;
+            
+            isAnimating = true;
+            basketball.classList.remove('animate-bounce-custom');
+            
+            // 获取初始位置
+            const startX = config.ballPosition.x;
+            const startY = config.ballPosition.y;
+            
+            // 计算到篮筐的距离和角度
+            const dx = config.basketPosition.x - startX;
+            const dy = config.basketPosition.y - startY;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            
+            // 应用一些随机性，使游戏更具挑战性
+            const randomX = (Math.random() - 0.5) * distance * 0.3;
+            const randomY = (Math.random() - 0.5) * distance * 0.2;
+            
+            // 设置动画
+            let t = 0;
+            const duration = 60; // 动画帧数
+            const animation = () => {
+                t++;
+                
+                // 抛物线运动
+                const progress = t / duration;
+                const easeProgress = progress * (2 - progress); // 缓动函数
+                
+                // 计算新位置
+                const newX = startX + dx * easeProgress + randomX * (1 - easeProgress);
+                const newY = startY + dy * easeProgress + randomY * (1 - easeProgress) + config.gravity * t * t;
+                
+                // 应用位置
+                basketball.style.transform = `translate(${newX - window.innerWidth / 2}px, ${newY - window.innerHeight + 100}px)`;
+                
+                // 检查是否进球
+                if (t > duration * 0.6) {
+                    checkScore(newX, newY);
+                }
+                
+                // 动画结束
+                if (t < duration) {
+                    requestAnimationFrame(animation);
+                } else {
+                    resetBall();
+                }
+            };
+            
+            requestAnimationFrame(animation);
+        }
+        
+        // 检查是否进球
+        function checkScore(ballX, ballY) {
+            const hoopRect = basketballHoop.getBoundingClientRect();
+            const basketX = hoopRect.left + hoopRect.width / 2;
+            const basketY = hoopRect.top + hoopRect.height * 0.8; // 篮筐位置
+            
+            // 计算篮球和篮筐之间的距离
+            const dx = ballX - basketX;
+            const dy = ballY - basketY;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            
+            // 如果篮球在篮筐附近，判定为进球
+            if (distance < 30) {
+                score++;
+                scoreDisplay.textContent = score;
+                
+                // 显示得分动画
+                showScoreAnimation(ballX, ballY);
+                
+                // 篮筐晃动效果
+                basketballHoop.classList.add('animate-scale');
+                setTimeout(() => {
+                    basketballHoop.classList.remove('animate-scale');
+                }, 300);
+            }
+        }
+        
+        // 显示得分动画
+        function showScoreAnimation(x, y) {
+            const scorePopup = document.createElement('div');
+            scorePopup.className = 'absolute text-2xl font-bold text-green-500 animate-fade-in';
+            scorePopup.style.left = `${x}px`;
+            scorePopup.style.top = `${y}px`;
+            scorePopup.style.transform = 'translate(-50%, -50%)';
+            scorePopup.style.zIndex = '100';
+            scorePopup.textContent = '+1';
+            
+            document.body.appendChild(scorePopup);
+            
+            // 动画效果
+            setTimeout(() => {
+                scorePopup.style.opacity = '0';
+                scorePopup.style.transform = 'translate(-50%, -150%)';
+                scorePopup.style.transition = 'opacity 0.5s, transform 0.5s';
+                
+                setTimeout(() => {
+                    document.body.removeChild(scorePopup);
+                }, 500);
+            }, 10);
+        }
+        
+        // 重置篮球位置
+        function resetBall() {
+            isAnimating = false;
+            basketball.style.transform = 'translate(-50%, 0)';
+            basketball.classList.add('animate-bounce-custom');
+            
+            // 随机改变篮筐位置，增加游戏难度
+            if (isPlaying) {
+                const randomX = (Math.random() - 0.5) * window.innerWidth * 0.3;
+                basketballHoop.style.transform = `translate(calc(-50% + ${randomX}px), -25%)`;
+                
+                // 更新位置
+                updatePositions();
+            }
+        }
+        
+        // 开始游戏
+        function startGame() {
+            isPlaying = true;
+            score = 0;
+            timeLeft = 30;
+            scoreDisplay.textContent = score;
+            timerDisplay.textContent = timeLeft;
+            
+            startBtn.classList.add('hidden');
+            restartBtn.classList.remove('hidden');
+            resultModal.classList.add('hidden');
+            
+            // 更新位置
+            updatePositions();
+            
+            // 启动计时器
+            timer = setInterval(() => {
+                timeLeft--;
+                timerDisplay.textContent = timeLeft;
+                
+                if (timeLeft <= 0) {
+                    endGame();
+                }
+            }, 1000);
+        }
+        
+        // 结束游戏
+        function endGame() {
+            isPlaying = false;
+            clearInterval(timer);
+            finalScore.textContent = score;
+            resultModal.classList.remove('hidden');
+        }
+        
+        // 事件监听
+        startBtn.addEventListener('click', startGame);
+        restartBtn.addEventListener('click', startGame);
+        playAgainBtn.addEventListener('click', startGame);
+        
+        basketball.addEventListener('click', () => {
+            if (isPlaying) {
+                throwBall();
+            }
+        });
+        
+        // 窗口大小改变时更新位置
+        window.addEventListener('resize', updatePositions);
+        
+        // 初始化位置
+        updatePositions();
+    </script>
 </body>
 </html>
+    
